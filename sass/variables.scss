@@ -1,0 +1,14 @@
+@font-face{
+    font-family: 'Broadway-flat';
+    src: url("../fonts/Broadway-flat/BroadwayFlat.ttf");
+}
+@font-face{
+    font-family: 'Gotham-medium';
+    src: url("../fonts/Gotham-medium/Gotham-medium.otf");
+}
+
+$font-title: "Broadway-flat";
+$font-secondary: "Gotham-medium";
+$color-primary: #B51A18;
+$color-primary-light:#b44a48 ;
+$color-black: black;

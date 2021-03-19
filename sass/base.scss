@@ -1,0 +1,39 @@
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+$big-desktop: 100em; //min 1600 px
+$tab-land: 75em; //1200px
+$tab-port: 56.25em; //900px
+$phone: 37.5em; //600 px
+
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+
+    @media(min-width: $big-desktop){
+        font-size: 75%;
+    }
+    @media(max-width: $tab-land){
+        font-size: 56.25%;
+    }
+    @media(max-width: $tab-port){
+        font-size: 50%;
+    }
+    @media(max-width: $phone){
+        font-size: 40%;
+    }
+}
+body{
+    box-sizing: border-box;
+    font-family: $font-secondary;
+    background-color: white;
+    background-image: url(../img/bg.jpeg);
+    background-position: center;
+    background-size: contain;
+    overflow-x: hidden;
+}

@@ -1,0 +1,87 @@
+
+.section-nosotros{
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    // background-image: url(../img/bg.jpg);
+    padding: 0rem 0 0rem 10rem;
+    align-items: start;
+    // overflow: hidden;
+
+    @media(max-width: $tab-port){
+        padding: 0rem 7rem 0rem 7rem;
+    }
+
+    @media(min-width: $big-desktop){
+        padding: 0rem 10rem 0rem 10rem;
+    }
+}
+
+.nosotros{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    // overflow: hidden;
+    position: relative;
+
+    @media (max-width:$tab-port){
+        flex-direction: column;
+    }
+
+        &__texto{
+         
+            color: white;
+            font-size: 2.5rem;
+            flex: 0 0 50%;
+            justify-content: center;
+            align-items: start;
+            margin-bottom: 4rem;
+
+            @media(max-width: $tab-port){
+                padding: 4rem 0;
+         }
+        }   
+        &__photo{
+            justify-content: center;
+            align-items: start;
+            width:  70%;
+            display: flex;
+         
+            // justify-content: flex-end;
+            // align-items: flex-end;
+
+            @media(max-width: $tab-port){
+                   width: 100%;
+            }
+            &--picture{
+                width: 50%;
+                position: absolute;
+                top: 0;
+                left: 60%; 
+
+                @media(max-width: $tab-port){
+                    margin-top: 0;
+                    margin-left: 0;
+                    position: unset;
+             }
+                @media(max-width:$phone){
+                    width: 85%;
+                    margin-top: 0;
+                    margin-left: 0;
+                    position: unset;
+                }
+            
+            }
+            // @include respond(phone){
+            //     margin-top: 9rem;
+            // }
+           
+        }
+
+            // @include respond(tab-port){
+            //     flex-direction: column;
+            // }
+}

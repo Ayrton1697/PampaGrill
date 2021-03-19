@@ -1,0 +1,55 @@
+.heading-1{
+    font-size: 14rem;
+    color: white;
+    font-family: $font-title;
+    text-transform: uppercase;
+}
+.heading-2{
+    font-size: 6rem;
+    color: white;
+    font-family: $font-title;
+    text-transform: uppercase;
+
+    &-nosotros{
+        padding: 4rem 0;
+    }
+    &-menu{
+        padding: 0 4rem;
+    }
+    &-pedido{
+        z-index: 20;
+    }
+    
+    @media(max-width: $phone){
+        font-size: 4.5rem;
+    }
+
+
+}
+.heading-3{
+    margin-top:  4rem;
+    font-size: 4rem;
+    color: $color-primary;
+    font-family: $font-title;
+
+    @media(max-width: $phone){
+        font-size: 4rem;
+    }
+
+}
+.heading-4{
+    font-size: 4rem;
+    color: white;
+    font-family: $font-title;
+}
+
+.subtitle{
+    font-size: 7rem;
+    text-align: center;
+    color: white;
+    font-family: $font-title;
+}
+
+.span-red{
+    color: $color-primary;
+}

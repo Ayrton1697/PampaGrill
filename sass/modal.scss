@@ -1,0 +1,36 @@
+.modal{
+ 
+
+    background:  url(../img/bg.jpeg) !important;
+    background-size: contain !important;
+    background-position: center !important;
+    border: 3px solid $color-primary;
+    font-size: 4rem;
+    text-align: center !important;
+    color: $color-primary;
+    font-family: $font-title;
+    text-transform: uppercase;
+    z-index: 500 !important;
+    border-radius: 5px;
+    height: 50vh;
+
+    &-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+    }   
+
+    &-cta{
+       
+    }
+
+}
+.heading-modal{
+        // text-align: center;
+}
+
+body > div.jquery-modal.blocker.current{
+    z-index: 50 !important;
+}

@@ -1,0 +1,167 @@
+.intersection{
+    // background-color: $color-primary;
+    // background-image: url(../img/bg.jpg);
+    // background-position: center;
+    padding: 10rem 10rem 0 10rem;
+    grid-column: full-start/full-end;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    
+   @media(min-width:$big-desktop){
+       padding: 0rem 10rem;
+   }
+    @media(max-width:$tab-port){
+        padding: 0rem 10rem 0rem 10rem;
+    }
+    @media (max-width:$phone){
+        flex-direction: column;
+        padding: 0rem 7rem 0 7rem;
+        height: 50vh;
+        justify-content: center;
+    }
+}
+.pedido{
+       
+        display: flex;
+        padding: 5rem;
+        justify-content: center;
+        align-items: center;
+  
+
+       @media (max-width:$tab-port){
+        flex-direction: column;
+    }
+
+    &__photo{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width:$tab-port){
+            width: 40%;
+        }
+
+        &--picture{
+            width: 100%;
+        }
+    }
+}
+.pedidos{
+
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    background-color: $color-primary;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 5rem;
+    -webkit-appearance: none;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    transition: all .4s;
+    text-decoration: none;
+    align-self:center;
+    justify-self: center;
+    margin: 3rem;
+
+    &:hover{
+        transform:translateY(-1.5rem);
+        transform:scale(1.1);
+        background-color: $color-primary-light;
+    }
+    // &--1{
+    //     background-color: rgb(182, 87, 87);
+    //     color: white;
+       
+    // }
+    &--2{
+      
+        // color: white;
+        // position: relative;
+        // overflow: hidden;
+        // flex-direction: column;
+        // z-index: 30;
+
+        &:hover .descuento{
+            top: 60%;
+        }
+    }
+    // &--3{
+    //     background-color: rgb(69, 202, 80);
+    //     color: white;
+    
+    // }
+    &__logo{
+        width: 20rem;
+    }
+ 
+}
+.pedido__png{
+    width: 40%;
+    align-self: flex-start;
+    order: -1;
+}
+.descuento{
+    font-size: 2.4rem;
+    color: $color-primary;
+    position: absolute;
+    top: 120%;
+    transition: all .3s;
+   
+}
+
+.order__now{
+
+    &--img{
+        width: 50rem;
+        height: 40rem;
+    }
+}
+.dish--img{
+    width: 80rem;
+
+    @media(max-width: $tab-land){
+        width: 45rem;
+    }
+    @media(max-width: $phone){
+        width: 30rem;
+    }
+
+    &-1{
+        width: 50%;
+        position: absolute;
+        top: 28%;
+        left: -10%;
+        z-index: 10;
+
+        @media(max-width: $phone){
+            width: 65%;
+            left: -22%;
+            z-index: 10;
+            filter: opacity(0.5);
+        }
+    }
+    &-2{
+        width: 45%;
+        position: absolute;
+        top: 30%;
+        right: -10%;
+
+        @media(min-width:$big-desktop){
+            top: 0%;
+            opacity: .5;
+        }
+        @media(max-width: $phone){
+            width: 63%;
+            right: -23%;
+            filter: opacity(0.5);
+        }
+    }
+}
+
